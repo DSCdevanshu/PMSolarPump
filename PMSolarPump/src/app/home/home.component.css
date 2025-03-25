@@ -1,0 +1,11 @@
+.divrow{
+  color: white;
+  background-color: #e37b19;
+}
+.divcol{
+ padding: 10px;
+}
+.divcolborder{
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
