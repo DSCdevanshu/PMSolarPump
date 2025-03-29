@@ -1,3 +1,12 @@
 import { Routes } from '@angular/router';
+import { FormComponent } from './form/form.component';
+import { HomeComponent } from './home/home.component';
 
-export const routes: Routes = [];
+export const routes: Routes = [
+
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: 'form', component: FormComponent },
+  { path: 'home', component: HomeComponent },
+  { path: '**', component: HomeComponent },
+
+];
