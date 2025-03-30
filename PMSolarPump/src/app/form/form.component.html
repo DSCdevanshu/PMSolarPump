@@ -12,19 +12,19 @@
         </div>
 
         <div class="card-body">
-          <form method="post" name="signup" enctype="multipart/form-data">
+          <form  (submit)="onSubmit()">
 
             <div class="row mb-3">
               <div class="col-md-4">
                 <div class="form-floating mb-3 mb-md-0">
                   <input class="form-control" id="fname" name="fname" type="text" placeholder="Enter your first name">
-                  <label for="inputFirstName">First name</label>
+                  <label for="fname">First name</label>
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="form-floating mb-3 mb-md-0">
                   <input class="form-control" id="lname" name="lname" type="text" placeholder="Enter your last name">
-                  <label for="inputLastName">Last name</label>
+                  <label for="lname">Last name</label>
                 </div>
               </div>
 
@@ -34,7 +34,7 @@
                 <div class="form-floating mb-3 mb-md-0">
                   <input class="form-control" id="fathername" name="fathername" type="text"
                     placeholder="Enter your father's name">
-                  <label for="inputFatherName">Father's name</label>
+                  <label for="fathername">Father's name</label>
                 </div>
               </div>
 
@@ -48,7 +48,7 @@
                     <option value="GENERAL">GENERAL</option>
                     <!-- Add more options if needed -->
                   </select>
-                  <label for="inputCategory">Category</label>
+                  <label for="category">Category</label>
                 </div>
               </div>
             </div>
@@ -61,14 +61,14 @@
                     <option value="Female">Female</option>
                     <option value="Other">Other</option>
                   </select>
-                  <label for="inputGender">Gender</label>
+                  <label for="gender">Gender</label>
                 </div>
               </div>
 
               <div class="col-md-6">
                 <div class="form-floating mb-3 mb-md-0">
                   <input class="form-control" id="dob" name="dob" type="date" placeholder="Select your date of birth">
-                  <label for="inputDOB">Date of Birth</label>
+                  <label for="dob">Date of Birth</label>
                 </div>
               </div>
             </div>
@@ -108,14 +108,14 @@
               <div class="col-md-6">
                 <div class="form-floating mb-3 mb-md-0">
                   <input class="form-control" id="email" name="email" type="email" placeholder="name@example.com">
-                  <label for="inputEmail">Email address</label>
+                  <label for="email">Email address</label>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="form-floating">
                   <input class="form-control" id="contact" name="contact" type="text" placeholder="1234567890"
                     pattern="[0-9]{10}" title="10 numeric characters only" maxlength="10">
-                  <label for="inputcontact">Phone Number</label>
+                  <label for="contact">Phone Number</label>
                 </div>
               </div>
             </div>
@@ -186,7 +186,8 @@
             </div>
 
             <div class="mt-4 mb-0">
-              <div class="d-grid"><button type="submit" class="btn btn-primary btn-block" name="submit">Submit</button>
+              <div class="d-grid">
+                <button type="submit" class="btn btn-primary btn-block" name="submit">Submit</button>
               </div>
             </div>
           </form>
